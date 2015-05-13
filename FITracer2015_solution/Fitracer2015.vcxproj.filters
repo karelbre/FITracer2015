@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{74205340-08a2-419b-8291-e0d45645708c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CL_GPU">
+      <UniqueIdentifier>{0810b743-7bbb-4d1f-acf2-5d08b39911af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GL_CPU">
+      <UniqueIdentifier>{5ed6bb0e-8dd5-4f3f-8e56-ae686be946f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Intersection">
+      <UniqueIdentifier>{49246431-2148-473e-b5bb-847e62e282ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{e2d28be2-2f06-4a16-b0b7-a3609c30fe56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pfm">
+      <UniqueIdentifier>{ad6f7531-870f-4570-bf6f-b98a41882069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Png">
+      <UniqueIdentifier>{6e97d4c3-abbc-45be-bb1b-f015d127072f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives">
+      <UniqueIdentifier>{34a68d09-68af-4d2c-9191-5000c4b92e3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{f7432c0f-55d2-416d-b454-94bb19e4c8fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shading">
+      <UniqueIdentifier>{477061f2-c73a-4dd3-a784-170439860b8d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\emissive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pathtracer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\raytracer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whittedtracer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gpu_pathtracer.cpp">
+      <Filter>CL_GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="src\aabb.cpp">
+      <Filter>Intersection</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bvhaccelerator.cpp">
+      <Filter>Intersection</Filter>
+    </ClCompile>
+    <ClCompile Include="src\intersection.cpp">
+      <Filter>Intersection</Filter>
+    </ClCompile>
+    <ClCompile Include="src\listaccelerator.cpp">
+      <Filter>Intersection</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octreeaccelerator.cpp">
+      <Filter>Intersection</Filter>
+    </ClCompile>
+    <ClCompile Include="src\uniformaccelerator.cpp">
+      <Filter>Intersection</Filter>
+    </ClCompile>
+    <ClCompile Include="src\image.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\matrix.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pfm\pfm_input_file.cpp">
+      <Filter>Pfm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pfm\pfm_output_file.cpp">
+      <Filter>Pfm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lodepng\lodepng.cpp">
+      <Filter>Png</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mesh.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primitive.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sphere.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="src\triangle.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="src\camera.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cornellscene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\node.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pointlight.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\color.cpp">
+      <Filter>Shading</Filter>
+    </ClCompile>
+    <ClCompile Include="src\diffuse.cpp">
+      <Filter>Shading</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lightprobe.cpp">
+      <Filter>Shading</Filter>
+    </ClCompile>
+    <ClCompile Include="src\texture.cpp">
+      <Filter>Shading</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLButton.cpp">
+      <Filter>GL_CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLObject.cpp">
+      <Filter>GL_CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenGL30.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenGL30Drv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenGLWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderEngine.cpp">
+      <Filter>CL_GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SDLGLContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\defines.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\emissive.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pathtracer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\raytracer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\whittedtracer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gpu_pathtracer.h">
+      <Filter>CL_GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gpu_types.h">
+      <Filter>CL_GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="src\aabb.h">
+      <Filter>Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\intersectable.h">
+      <Filter>Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\intersection.h">
+      <Filter>Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\listaccelerator.h">
+      <Filter>Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octreeaccelerator.h">
+      <Filter>Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rayaccelerator.h">
+      <Filter>Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\uniformaccelerator.h">
+      <Filter>Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ray.h">
+      <Filter>Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\image.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\matrix.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timer.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pfm\byte_order.hpp">
+      <Filter>Pfm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pfm\color_pixel.hpp">
+      <Filter>Pfm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pfm\config.hpp">
+      <Filter>Pfm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pfm\pfm.hpp">
+      <Filter>Pfm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pfm\pfm_input_file.hpp">
+      <Filter>Pfm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pfm\pfm_output_file.hpp">
+      <Filter>Pfm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lodepng\lodepng.h">
+      <Filter>Png</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mesh.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="src\primitive.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sphere.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="src\triangle.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cornellscene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\node.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pointlight.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\color.h">
+      <Filter>Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="src\diffuse.h">
+      <Filter>Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lightprobe.h">
+      <Filter>Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="src\material.h">
+      <Filter>Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="src\texture.h">
+      <Filter>Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="src\camera.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bvhaccelerator.h">
+      <Filter>Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLButton.h">
+      <Filter>GL_CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLObject.h">
+      <Filter>GL_CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLText.h">
+      <Filter>GL_CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shaders_util.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Integer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenGL30.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenGL30Drv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderEngine.h">
+      <Filter>CL_GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\kernel_functions.h">
+      <Filter>CL_GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\kernel_RNG.h">
+      <Filter>CL_GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\kernel_trace_bvh.h">
+      <Filter>CL_GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\kernel_trace_list.h">
+      <Filter>CL_GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\kernel_trace_octree.h">
+      <Filter>CL_GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\kernel_trace_unigrid.h">
+      <Filter>CL_GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\kernel_types.h">
+      <Filter>CL_GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\kernel_types_que.h">
+      <Filter>CL_GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDLGLContext.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\FShader.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\VShader.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="kernels\gpu_kernel.cl">
+      <Filter>CL_GPU</Filter>
+    </None>
+  </ItemGroup>
+</Project>

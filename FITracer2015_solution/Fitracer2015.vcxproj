@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FFF5AD0B-FFFB-4103-A413-3F8C090AAE0F}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Fitracer2015</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\FIT VUT\3BIT\ZS\ISP\prTracer\prTracer2010_mod\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\FIT VUT\3BIT\ZS\ISP\prTracer\prTracer2010_mod\lib\x86;$(LibraryPath)</LibraryPath>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\FIT VUT\3BIT\ZS\ISP\prTracer\prTracer2010_mod\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\FIT VUT\3BIT\ZS\ISP\prTracer\prTracer2010_mod\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\FIT VUT\3BIT\ZS\ISP\prTracer\prTracer2010_mod\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2main.lib;OpenGL32.lib;OpenCL.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\FIT VUT\3BIT\ZS\ISP\prTracer\prTracer2010_mod\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\FIT VUT\3BIT\ZS\ISP\prTracer\prTracer2010_mod\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2main.lib;OpenGL32.lib;OpenCL.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\FIT VUT\3BIT\ZS\ISP\prTracer\prTracer2010_mod\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\aabb.cpp" />
+    <ClCompile Include="src\bvhaccelerator.cpp" />
+    <ClCompile Include="src\camera.cpp" />
+    <ClCompile Include="src\color.cpp" />
+    <ClCompile Include="src\cornellscene.cpp" />
+    <ClCompile Include="src\diffuse.cpp" />
+    <ClCompile Include="src\emissive.cpp" />
+    <ClCompile Include="src\GLButton.cpp" />
+    <ClCompile Include="src\GLObject.cpp" />
+    <ClCompile Include="src\gpu_pathtracer.cpp" />
+    <ClCompile Include="src\image.cpp" />
+    <ClCompile Include="src\intersection.cpp" />
+    <ClCompile Include="src\lightprobe.cpp" />
+    <ClCompile Include="src\listaccelerator.cpp" />
+    <ClCompile Include="src\lodepng\lodepng.cpp" />
+    <ClCompile Include="src\matrix.cpp" />
+    <ClCompile Include="src\mesh.cpp" />
+    <ClCompile Include="src\node.cpp" />
+    <ClCompile Include="src\octreeaccelerator.cpp" />
+    <ClCompile Include="src\OpenGL30.cpp" />
+    <ClCompile Include="src\OpenGL30Drv.cpp" />
+    <ClCompile Include="src\OpenGLWindow.cpp" />
+    <ClCompile Include="src\pathtracer.cpp" />
+    <ClCompile Include="src\RenderEngine.cpp" />
+    <ClCompile Include="src\pfm\pfm_input_file.cpp" />
+    <ClCompile Include="src\pfm\pfm_output_file.cpp" />
+    <ClCompile Include="src\pointlight.cpp" />
+    <ClCompile Include="src\primitive.cpp" />
+    <ClCompile Include="src\raytracer.cpp" />
+    <ClCompile Include="src\scene.cpp" />
+    <ClCompile Include="src\SDLGLContext.cpp" />
+    <ClCompile Include="src\sphere.cpp" />
+    <ClCompile Include="src\texture.cpp" />
+    <ClCompile Include="src\Timer.cpp" />
+    <ClCompile Include="src\Transform.cpp" />
+    <ClCompile Include="src\triangle.cpp" />
+    <ClCompile Include="src\uniformaccelerator.cpp" />
+    <ClCompile Include="src\Vector.cpp" />
+    <ClCompile Include="src\whittedtracer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="kernels\kernel_functions.h" />
+    <ClInclude Include="kernels\kernel_RNG.h" />
+    <ClInclude Include="kernels\kernel_trace_bvh.h" />
+    <ClInclude Include="kernels\kernel_trace_list.h" />
+    <ClInclude Include="kernels\kernel_trace_octree.h" />
+    <ClInclude Include="kernels\kernel_trace_unigrid.h" />
+    <ClInclude Include="kernels\kernel_types.h" />
+    <ClInclude Include="kernels\kernel_types_que.h" />
+    <ClInclude Include="src\aabb.h" />
+    <ClInclude Include="src\bvhaccelerator.h" />
+    <ClInclude Include="src\camera.h" />
+    <ClInclude Include="src\color.h" />
+    <ClInclude Include="src\cornellscene.h" />
+    <ClInclude Include="src\defines.h" />
+    <ClInclude Include="src\diffuse.h" />
+    <ClInclude Include="src\emissive.h" />
+    <ClInclude Include="src\GLButton.h" />
+    <ClInclude Include="src\GLObject.h" />
+    <ClInclude Include="src\GLText.h" />
+    <ClInclude Include="src\gpu_pathtracer.h" />
+    <ClInclude Include="src\gpu_types.h" />
+    <ClInclude Include="src\image.h" />
+    <ClInclude Include="src\Integer.h" />
+    <ClInclude Include="src\intersectable.h" />
+    <ClInclude Include="src\intersection.h" />
+    <ClInclude Include="src\lightprobe.h" />
+    <ClInclude Include="src\listaccelerator.h" />
+    <ClInclude Include="src\lodepng\lodepng.h" />
+    <ClInclude Include="src\material.h" />
+    <ClInclude Include="src\matrix.h" />
+    <ClInclude Include="src\mesh.h" />
+    <ClInclude Include="src\node.h" />
+    <ClInclude Include="src\octreeaccelerator.h" />
+    <ClInclude Include="src\OpenGL30.h" />
+    <ClInclude Include="src\OpenGL30Drv.h" />
+    <ClInclude Include="src\pathtracer.h" />
+    <ClInclude Include="src\RenderEngine.h" />
+    <ClInclude Include="src\pfm\byte_order.hpp" />
+    <ClInclude Include="src\pfm\color_pixel.hpp" />
+    <ClInclude Include="src\pfm\config.hpp" />
+    <ClInclude Include="src\pfm\pfm.hpp" />
+    <ClInclude Include="src\pfm\pfm_input_file.hpp" />
+    <ClInclude Include="src\pfm\pfm_output_file.hpp" />
+    <ClInclude Include="src\pointlight.h" />
+    <ClInclude Include="src\primitive.h" />
+    <ClInclude Include="src\ray.h" />
+    <ClInclude Include="src\rayaccelerator.h" />
+    <ClInclude Include="src\raytracer.h" />
+    <ClInclude Include="src\scene.h" />
+    <ClInclude Include="src\SDLGLContext.h" />
+    <ClInclude Include="src\Shaders_util.h" />
+    <ClInclude Include="src\sphere.h" />
+    <ClInclude Include="src\texture.h" />
+    <ClInclude Include="src\timer.h" />
+    <ClInclude Include="src\Transform.h" />
+    <ClInclude Include="src\triangle.h" />
+    <ClInclude Include="src\uniformaccelerator.h" />
+    <ClInclude Include="src\Vector.h" />
+    <ClInclude Include="src\whittedtracer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="kernels\gpu_kernel.cl" />
+    <None Include="shaders\FShader.glsl" />
+    <None Include="shaders\VShader.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
